@@ -11,7 +11,7 @@ public class Cliente {
 	
 	private Long id;
 	private Long cpf;
-	private String nome;
+	private String nome;	
 	private Imagem foto;
 	private List<Consulta> consultas;
 	
@@ -38,6 +38,12 @@ public class Cliente {
 	}
 	public void setConsultas(List<Consulta> consultas) {
 		this.consultas = consultas;
+	}
+	public Imagem getFoto() {
+		return foto;
+	}
+	public void setFoto(Imagem foto) {
+		this.foto = foto;
 	}
 
 }
