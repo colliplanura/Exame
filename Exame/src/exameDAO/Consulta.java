@@ -1,3 +1,8 @@
+/*
+ * Autor: Sandro Colli
+ * Data.: 19/11/2016
+ */
+
 package exameDAO;
 
 import java.util.Calendar;
@@ -9,9 +14,8 @@ public class Consulta {
 	private Calendar dataConsulta;
 	private String queiaPrincipal;
 	private String historia;
+	private Cliente cliente;
 	private List<Tag> tags;
-	private List<Exame> exames;
-	private List<Diagnostico> diagnosticos;
 	
 	public Long getId() {
 		return id;
@@ -43,17 +47,11 @@ public class Consulta {
 	public void setTags(List<Tag> tags) {
 		this.tags = tags;
 	}
-	public List<Exame> getExames() {
-		return exames;
+	public Cliente getCliente() {
+		return cliente;
 	}
-	public void setExames(List<Exame> exames) {
-		this.exames = exames;
-	}
-	public List<Diagnostico> getDiagnosticos() {
-		return diagnosticos;
-	}
-	public void setDiagnosticos(List<Diagnostico> diagnosticos) {
-		this.diagnosticos = diagnosticos;
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 }

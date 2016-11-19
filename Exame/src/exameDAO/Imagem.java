@@ -1,3 +1,8 @@
+/*
+ * Autor: Sandro Colli
+ * Data.: 19/11/2016
+ */
+
 package exameDAO;
 
 import java.awt.image.BufferedImage;
@@ -10,6 +15,7 @@ public class Imagem {
 	private Calendar dataInclusao;
 	private String descricao;
 	private BufferedImage imagem;
+	private Cliente cliente;
 	private List<Tag> tags;
 
 	public Long getId() {
@@ -41,6 +47,12 @@ public class Imagem {
 	}
 	public void setImagem(BufferedImage imagem) {
 		this.imagem = imagem;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 }

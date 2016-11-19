@@ -1,3 +1,8 @@
+/*
+ * Autor: Sandro Colli
+ * Data.: 19/11/2016
+ */
+
 package exameDAO;
 
 import java.util.Calendar;
@@ -11,6 +16,7 @@ public class Diagnostico {
 	private Long id;
 	private Calendar data;
 	private String descricao;
+	private Cliente cliente;
 	private List<Tag> tags;
 	private List<Subcategoria> cids;
 	
@@ -43,6 +49,12 @@ public class Diagnostico {
 	}
 	public void setCids(List<Subcategoria> cids) {
 		this.cids = cids;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 }

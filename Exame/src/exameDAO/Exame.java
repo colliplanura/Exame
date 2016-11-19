@@ -1,3 +1,8 @@
+/*
+ * Autor: Sandro Colli
+ * Data.: 19/11/2016
+ */
+
 package exameDAO;
 
 import java.util.Calendar;
@@ -9,6 +14,7 @@ public class Exame {
 	private String titulo;
 	private String descricao;
 	private Calendar dataRealizacao;
+	private Cliente cliente;
 	private List<Imagem> imagens;
 	private List<Tag> tags;
 	
@@ -47,6 +53,12 @@ public class Exame {
 	}
 	public void setImagens(List<Imagem> imagens) {
 		this.imagens = imagens;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 }

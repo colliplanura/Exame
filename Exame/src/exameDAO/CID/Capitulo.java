@@ -1,5 +1,10 @@
+/*
+ * Autor: Sandro Colli
+ * Data.: 19/11/2016
+ */
+
 package exameDAO.CID;
-//teste
+
 public class Capitulo {
 	
 	private short numCap; // número do capítulo (em numeração arábica); se igual a zero, indica o capítulo que contém os códigos não oficialmente pertinentes à CID-10;
