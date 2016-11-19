@@ -1,3 +1,8 @@
+/*
+ * Autor: Sandro Colli
+ * Data.: 19/11/2016
+ */
+
 package exameDAO;
 
 import java.util.List;
@@ -7,6 +12,7 @@ public class Cliente {
 	private Long id;
 	private Long cpf;
 	private String nome;
+	private Imagem foto;
 	private List<Consulta> consultas;
 	
 	public Long getId() {
